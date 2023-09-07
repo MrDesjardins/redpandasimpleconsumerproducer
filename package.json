@@ -1,0 +1,24 @@
+{
+  "name": "redpandasimpleconsumerproducer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:producer": "npx tsc -v && npx tsc && node build/producer.js",
+    "start:consumer": "npx tsc -v && npx tsc && node build/consumer.js",
+    "start:offsetexplorer": "npx tsc -v && npx tsc && node build/offsetexplorer.js"
+  },
+  "keywords": [],
+  "author": "Patrick Desjardins",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "@types/uuid": "^9.0.3",
+    "typescript": "^5.2.2"
+  }
+}
